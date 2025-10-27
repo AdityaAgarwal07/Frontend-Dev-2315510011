@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Dashboard - Grid</title>
+<style>
+  body{margin:0;font-family:system-ui,Segoe UI,Arial;background:#f5f6f8}
+  .layout{display:grid;grid-template-columns:250px 1fr;grid-template-rows:60px 1fr;grid-template-areas:"header header" "sidebar main";gap:18px;min-height:100vh;padding:18px;box-sizing:border-box}
+  header{grid-area:header;background:white;border-radius:8px;display:flex;align-items:center;padding:12px;box-shadow:0 2px 6px rgba(0,0,0,0.06)}
+  nav{grid-area:sidebar;background:white;border-radius:8px;padding:12px;display:flex;flex-direction:column;gap:8px;box-shadow:0 2px 6px rgba(0,0,0,0.04)}
+  main{grid-area:main;background:transparent;display:grid;grid-template-columns:repeat(2,1fr);grid-auto-rows:160px;gap:18px}
+  .panel{background:white;border-radius:8px;display:flex;align-items:center;justify-content:center;transition:transform .2s,box-shadow .2s}
+  .panel:hover{transform:scale(1.04);box-shadow:0 12px 24px rgba(0,0,0,0.12)}
+  .wide{grid-column:span 2;height:120px}
+  @media (max-width:800px){.layout{grid-template-columns:1fr;grid-template-areas:"header" "main" "sidebar"};main{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<div class="layout">
+  <header>Dashboard Header</header>
+  <nav>
+    <a href="#">Overview</a>
+    <a href="#">Reports</a>
+    <a href="#">Settings</a>
+  </nav>
+  <main>
+    <div class="panel">Box 1</div>
+    <div class="panel">Box 2</div>
+    <div class="panel wide">Wide Box (spans 2 columns)</div>
+    <div class="panel">Box 4</div>
+  </main>
+</div>
+</body>
+</html>

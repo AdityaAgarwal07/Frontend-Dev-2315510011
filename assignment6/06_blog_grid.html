@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Blog - Grid Areas</title>
+<style>
+  body{margin:0;font-family:system-ui,Segoe UI,Arial;background:#fff;color:#222;padding:18px;box-sizing:border-box}
+  .layout{display:grid;grid-template-columns:250px 1fr;grid-template-areas:"header header" "sidebar main" "footer footer";gap:18px;grid-auto-rows:min-content}
+  header{grid-area:header;padding:12px}
+  nav{display:flex;gap:12px}
+  aside{grid-area:sidebar;background:#f4f4f4;padding:12px;border-radius:8px}
+  main{grid-area:main;display:grid;grid-template-columns:1fr 1fr;gap:18px}
+  footer{grid-area:footer;padding:12px;text-align:center;background:#f4f4f4;border-radius:8px}
+  article{background:white;padding:16px;border-radius:8px;min-height:180px}
+  @media (max-width:800px){.layout{grid-template-columns:1fr;grid-template-areas:"header" "main" "sidebar" "footer"};main{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<div class="layout">
+  <header><h1>My Blog</h1><nav><a href="#">Home</a> | <a href="#">About</a></nav></header>
+  <aside>
+    <h3>Categories</h3>
+    <ul><li>Design</li><li>Code</li><li>Travel</li></ul>
+  </aside>
+  <main>
+    <article><h2>Post One</h2><p>Summary of the first post...</p></article>
+    <article><h2>Post Two</h2><p>Summary of the second post...</p></article>
+  </main>
+  <footer>Contact: email@example.com</footer>
+</div>
+</body>
+</html>

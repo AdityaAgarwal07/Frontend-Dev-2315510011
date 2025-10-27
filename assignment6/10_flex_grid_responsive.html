@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Flex + Grid Responsive</title>
+<style>
+  body{margin:0;font-family:system-ui,Segoe UI,Arial}
+  header{display:flex;align-items:center;justify-content:space-between;padding:12px 18px;background:#2b7a78;color:white}
+  nav a{margin-left:12px;color:white;text-decoration:none}
+  .container{display:grid;grid-template-columns:2fr 1fr;gap:18px;padding:18px}
+  article{background:white;padding:18px;border-radius:8px;display:flex;flex-direction:column;gap:12px}
+  .row{display:flex;gap:12px}
+  .box{flex:1;padding:12px;border-radius:8px;background:#f4f4f4;display:flex;align-items:center;justify-content:center}
+  aside{background:#fff;padding:18px;border-radius:8px}
+  footer{text-align:center;padding:12px;background:#efefef}
+  @keyframes titleUp{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:translateY(0)}}
+  h1{animation:titleUp .8s ease both}
+  @media (max-width:700px){.container{grid-template-columns:1fr}.row{flex-direction:column}}
+</style>
+</head>
+<body>
+<header><div class="logo">Logo</div><nav><a href="#">Home</a><a href="#">Articles</a><a href="#">Contact</a></nav></header>
+<div class="container">
+  <article>
+    <h1>Main Article</h1>
+    <div class="row">
+      <div class="box">Box 1</div>
+      <div class="box">Box 2</div>
+      <div class="box">Box 3</div>
+    </div>
+    <p>Article content goes here. The layout collapses into a single column on small screens.</p>
+  </article>
+  <aside>
+    <h3>Sidebar</h3>
+    <p>Sidebar content</p>
+  </aside>
+</div>
+<footer>&copy; <span id="yy"></span> Example</footer>
+<script>document.getElementById('yy').textContent=new Date().getFullYear();</script>
+</body>
+</html>

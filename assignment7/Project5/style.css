@@ -1,0 +1,29 @@
+
+/* Advanced Selectors - examples and comments */
+
+/* Attribute selector: selects input elements with type="text" */
+input[type="text"]{border:2px dashed #2b6cb0;padding:8px;border-radius:6px}
+/* Attribute selector: starts-with selector for links beginning with https */
+a[href^="https"]{color:#2f855a;font-weight:600}
+/* Pseudo-class :hover */
+a:hover{opacity:0.8}
+/* Pseudo-class :focus */
+input:focus{outline:3px solid rgba(99,102,241,0.25)}
+
+/* nth-child selector */
+.items li:nth-child(2){background:#fff3bf;padding:8px;border-radius:4px}
+
+/* combinator: child '>' - direct child only */
+main > ul{margin-top:16px;}
+
+/* adjacent sibling '+' - select link immediately after form */
+form + a{display:inline-block;margin-left:10px}
+
+/* general sibling '~' - select any link after the first link in the DOM */
+a[href^="http"] ~ a{opacity:0.9}
+
+/* pseudo-element ::before example */
+.items li::before{content:"• ";color:#ff6b6b}
+
+/* pseudo-element ::after example */
+.items li.special::after{content:" — special";font-size:0.85rem;color:#6b7280}

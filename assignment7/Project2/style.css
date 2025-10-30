@@ -1,0 +1,14 @@
+
+/* Height & Width Practice */
+:root{--bg:#eef2ff}
+*{box-sizing:border-box;font-family:system-ui,Segoe UI,Roboto}
+body{margin:0;background:var(--bg);padding:28px; color:#111}
+header{text-align:center;margin-bottom:16px}
+.center{min-height:60vh;display:flex;gap:20px;align-items:center;justify-content:center}
+.box{padding:12px;border-radius:8px;color:#fff;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center}
+.a{background:#ef476f;width:300px;height:200px}
+.b{background:#ffd166;width:40%;height:30vh;min-height:120px;color:#222}
+.c{background:#06d6a0;width:15em;height:10em;max-width:220px;overflow:auto;padding:10px}
+.content{font-size:0.85rem;margin-top:8px;background:rgba(255,255,255,0.12);padding:6px;border-radius:4px}
+/* center vertically and horizontally already via flex on .center */
+@media(max-width:800px){.center{flex-direction:column;padding:20px} .b{width:80%}}

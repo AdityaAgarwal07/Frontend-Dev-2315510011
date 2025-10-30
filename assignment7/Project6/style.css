@@ -1,0 +1,17 @@
+
+/* Transformations Showcase */
+*{box-sizing:border-box;font-family:system-ui,Arial}
+body{margin:0;padding:28px;background:#f0f4f8;color:#111}
+.row{display:flex;gap:18px;justify-content:center;align-items:center}
+.tbox{width:140px;text-align:center}
+.demo{background:#fff;padding:28px;border-radius:8px;box-shadow:0 6px 18px rgba(0,0,0,0.06);transition:all 0.4s ease}
+.tbox:hover .demo{}
+
+/* specific transforms on hover */
+.rotate:hover .demo{transform:rotate(12deg)}
+.scale:hover .demo{transform:scale(1.12)}
+.translate:hover .demo{transform:translateX(12px)}
+.skew:hover .demo{transform:skewX(8deg)}
+
+figcaption{margin-top:8px;font-size:0.95rem;color:#374151}
+@media(max-width:700px){.row{flex-direction:column}}

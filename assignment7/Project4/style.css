@@ -1,0 +1,13 @@
+
+/* Shadows & Depth */
+*{box-sizing:border-box;font-family:Inter,Segoe UI,Arial}
+body{margin:0;padding:36px;background:#f7fafc;color:#111}
+header h1{text-align:center;margin-bottom:20px}
+.cards{display:flex;gap:22px;justify-content:center;align-items:flex-start}
+.card{background:#fff;padding:20px;border-radius:12px;width:260px;transition:box-shadow 0.28s ease, transform 0.28s ease;text-align:center}
+.card h3{text-shadow:1px 1px 0 rgba(0,0,0,0.06);margin:0 0 12px}
+.c1{box-shadow:0 4px 8px rgba(0,0,0,0.06)}
+.c2{box-shadow:0 8px 18px rgba(0,0,0,0.08)}
+.c3{box-shadow:0 14px 30px rgba(0,0,0,0.10)}
+.card:hover{transform:translateY(-10px);box-shadow:0 34px 60px rgba(0,0,0,0.18)}
+@media(max-width:800px){.cards{flex-direction:column;align-items:center}}

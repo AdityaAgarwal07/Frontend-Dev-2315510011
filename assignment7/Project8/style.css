@@ -1,0 +1,16 @@
+
+/* Box Model Exploration */
+*{box-sizing:border-box;font-family:Arial}
+body{margin:0;padding:28px;background:#f8fafc;color:#0f172a}
+.center{display:flex;gap:36px;align-items:center;justify-content:center;flex-wrap:wrap}
+.boxmodel{position:relative;width:260px;height:220px}
+.boxmodel .content{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);background:#fff;padding:8px;z-index:30}
+.boxmodel .padding{position:absolute;inset:20px;background:rgba(99,102,241,0.06);z-index:20;border-radius:6px;padding:12px;display:flex;align-items:center;justify-content:center}
+.boxmodel .border{position:absolute;inset:10px;border:6px solid rgba(99,102,241,0.18);z-index:10;border-radius:8px;display:flex;align-items:center;justify-content:center}
+.boxmodel .margin{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;z-index:5;outline:4px dashed rgba(111,66,193,0.06)}
+
+/* demos for box-sizing */
+.demo{margin-top:12px;padding:12px;border:1px solid #e2e8f0;border-radius:6px;background:#fff}
+.default{box-sizing:content-box;width:180px}
+.boxed{box-sizing:border-box;width:180px;padding:20px;border:10px solid #c7d2fe}
+.explain{max-width:420px}

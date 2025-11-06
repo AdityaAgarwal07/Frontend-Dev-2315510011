@@ -1,0 +1,49 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Combined Responsive Web Demo</title>
+  <link rel="stylesheet" href="combined-responsive-web-demo.css" />
+</head>
+<body>
+  <header class="container site-header">
+    <div class="brand">Responsive Demo</div>
+    <nav class="nav" aria-label="Main navigation">
+      <a href="#gallery">Gallery</a>
+      <a href="#text">About</a>
+      <a href="#cheat">Cheat Sheet</a>
+    </nav>
+  </header>
+
+  <main class="container grid-main">
+    <section id="gallery" class="card fade-in">
+      <h2>Mini Gallery</h2>
+      <div class="mini-grid">
+        <img src="https://picsum.photos/id/1016/600/400" alt="Waterfall" />
+        <img src="https://picsum.photos/id/1020/600/400" alt="Bridge" />
+        <img src="https://picsum.photos/id/1024/600/400" alt="Whale" />
+        <img src="https://picsum.photos/id/1039/600/400" alt="Canyon" />
+      </div>
+    </section>
+
+    <section id="text" class="card fade-in">
+      <h2>What is Responsive Design?</h2>
+      <p>Responsive design ensures content looks great on any device by using flexible layouts, relative units, and media queries.</p>
+      <p>Hover elements to see subtle transitions, and notice sections fade in on load.</p>
+    </section>
+
+    <section id="cheat" class="card fade-in">
+      <h2>Cheat Sheet Preview</h2>
+      <ul>
+        <li><strong>Grid:</strong> <code>repeat(auto-fit, minmax(200px, 1fr))</code></li>
+        <li><strong>Flex:</strong> <code>display:flex; gap:1rem;</code></li>
+        <li><strong>Type:</strong> <code>clamp(1rem, 2vw, 1.5rem)</code></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="container"><small>All sections stack below 700px.</small></footer>
+</body>
+</html>

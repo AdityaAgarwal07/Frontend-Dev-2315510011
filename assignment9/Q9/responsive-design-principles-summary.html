@@ -1,0 +1,33 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Responsive Design Principles Summary</title>
+  <link rel="stylesheet" href="responsive-design-principles-summary.css" />
+</head>
+<body>
+  <header class="container"><h1>Responsive Design Principles</h1></header>
+  <main class="container">
+    <section class="principles" aria-label="Core principles grid">
+      <article class="cell card">
+        <h3>Fluid Layouts</h3>
+        <p>Use flexible grids that adapt to the viewport.</p>
+        <pre><code>grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));</code></pre>
+      </article>
+      <article class="cell card">
+        <h3>Flexible Media</h3>
+        <p>Images and videos scale within their containers.</p>
+        <pre><code>img {{ max-width: 100%; height: auto; }}</code></pre>
+      </article>
+      <article class="cell card">
+        <h3>Breakpoints</h3>
+        <p>Adjust layouts at logical sizes, not devices.</p>
+        <pre><code>@media (max-width: 600px) {{ ... }}</code></pre>
+      </article>
+    </section>
+  </main>
+  <footer class="container"><small>Below 600px this becomes a single column.</small></footer>
+</body>
+</html>

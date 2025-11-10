@@ -1,0 +1,46 @@
+body {
+  background-color: #f8f9fa;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Section Styling */
+.pricing-section h2 {
+  color: #333;
+}
+
+.pricing-card {
+  border-radius: 12px;
+  transition: all 0.3s ease;
+}
+
+.pricing-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+/* Highlighted Pro Card */
+.pro-card {
+  transform: scale(1.05);
+  border: 2px solid #0d6efd;
+}
+
+.pro-card:hover {
+  box-shadow: 0 10px 30px rgba(13, 110, 253, 0.4);
+}
+
+/* Buttons and Price Styling */
+.price {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.btn {
+  border-radius: 8px;
+  padding: 8px 20px;
+  font-weight: 500;
+}
+
+.list-unstyled li {
+  margin-bottom: 10px;
+  font-size: 1rem;
+}

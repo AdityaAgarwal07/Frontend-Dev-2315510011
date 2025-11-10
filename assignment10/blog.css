@@ -1,0 +1,60 @@
+/* ==============================
+   Custom Themed Blog Styles
+   ============================== */
+
+/* 🎨 Override Bootstrap Theme Variables */
+:root {
+  --bs-primary: #ff6f61; /* Custom Coral Color */
+  --bs-dark: #2b2b2b;
+  --bs-font-sans-serif: 'Quicksand', sans-serif;
+}
+
+/* ✨ General Page Styling */
+body {
+  font-family: var(--bs-font-sans-serif);
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+/* 🏠 Header */
+header {
+  background: var(--bs-primary);
+  color: #fff;
+}
+
+/* 🧱 Blog Cards */
+.blog-card {
+  border: none;
+  transition: all 0.3s ease;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.blog-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* 🖋️ Blog Titles */
+.card-title {
+  font-weight: 700;
+}
+
+/* 🧠 Buttons */
+.btn-primary {
+  background-color: var(--bs-primary);
+  border: none;
+  transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: #e65a50;
+  transform: scale(1.05);
+}
+
+/* 🦶 Footer */
+footer {
+  background-color: var(--bs-dark);
+  letter-spacing: 0.5px;
+  font-size: 0.9rem;
+}

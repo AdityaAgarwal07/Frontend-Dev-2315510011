@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Startup Landing Page</title>
+
+  <!-- ✅ Bootstrap CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- ✅ Custom CSS -->
+  <link rel="stylesheet" href="landingpage.css">
+</head>
+<body>
+
+  <!-- 🌐 Header & Navbar -->
+  <header class="container-fluid bg-light shadow-sm">
+    <nav class="navbar navbar-expand-lg navbar-light container py-3">
+      <a class="navbar-brand fw-bold fs-3 text-primary" href="#">TechStart</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <!-- 💡 Hero Section -->
+  <section class="hero d-flex align-items-center">
+    <div class="container text-center">
+      <div class="row justify-content-center">
+        <div class="col-md-8">
+          <h1 class="display-4 fw-bold">Build Smarter with Bootstrap</h1>
+          <p class="lead text-muted">Easily create responsive, mobile-first websites using the Bootstrap grid and utilities.</p>
+          <a href="#" class="btn btn-primary btn-lg mt-3">Get Started</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ⚙️ Grid Example Section -->
+  <section class="features py-5 bg-light">
+    <div class="container text-center">
+      <h2 class="mb-4">Why Choose Bootstrap?</h2>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="card p-4 h-100">
+            <h5 class="fw-bold">Responsive Layouts</h5>
+            <p>Bootstrap’s grid system adjusts seamlessly to different screen sizes.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card p-4 h-100">
+            <h5 class="fw-bold">Reusable Components</h5>
+            <p>Use prebuilt navbars, buttons, and forms without writing extra CSS.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card p-4 h-100">
+            <h5 class="fw-bold">Easy Customization</h5>
+            <p>Change themes, colors, and spacing easily with Bootstrap utilities.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 🦶 Footer -->
+  <footer class="bg-dark text-white text-center py-3">
+    <p class="mb-0">© 2025 TechStart | Built with Bootstrap</p>
+  </footer>
+
+  <!-- ✅ Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- ✅ Verify Bootstrap Setup -->
+  <script>
+    console.log('Bootstrap loaded:', !!window.bootstrap);
+  </script>
+</body>
+</html>

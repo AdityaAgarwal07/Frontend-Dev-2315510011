@@ -1,0 +1,48 @@
+/* ============================
+   Custom Styles for Restaurant Menu
+   ============================ */
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Header */
+header {
+  border-bottom: 3px solid #dc3545;
+}
+
+/* Table Styling */
+table {
+  background-color: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+/* Table Hover */
+table tbody tr:hover {
+  background-color: #fceaea;
+  transition: background-color 0.3s ease;
+}
+
+/* Chef’s Specials */
+.list-group-item {
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.list-group-item:hover {
+  background-color: #dc3545;
+  color: #fff;
+  transform: scale(1.02);
+}
+
+/* Image Styling */
+img {
+  border-radius: 10px;
+}
+
+/* Footer */
+footer {
+  font-size: 0.9rem;
+  letter-spacing: 0.5px;
+}

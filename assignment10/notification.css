@@ -1,0 +1,50 @@
+/* ============================
+   Custom Styles for Notification Dashboard
+   ============================ */
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Header Styling */
+header {
+  background-color: #0d6efd; /* Bootstrap primary */
+}
+
+/* Card Container */
+.card {
+  border: none;
+  border-radius: 15px;
+  background-color: #fff;
+}
+
+/* Alerts Styling */
+.alert {
+  font-size: 0.95rem;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  transition: all 0.3s ease;
+}
+
+/* Hover Lift Effect */
+.alert:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Summary Well */
+.summary-well {
+  background-color: #f8f9fa;
+  border: 2px solid #dee2e6;
+  border-radius: 10px;
+}
+
+.summary-well h5 {
+  color: #495057;
+}
+
+/* Footer */
+footer {
+  font-size: 0.9rem;
+  letter-spacing: 0.5px;
+}

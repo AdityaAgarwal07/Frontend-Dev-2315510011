@@ -1,0 +1,12 @@
+7. VS Code Setup for HTML, CSS, and JavaScript
+
+Steps:
+1. Download and install Visual Studio Code.
+2. Install extensions:
+   - Live Server (for real-time preview)
+   - Prettier (for formatting code)
+   - HTML CSS Support
+   - JavaScript (ES6) Code Snippets
+3. Open a new folder and create `index.html`, `style.css`, and `script.js` files.
+
+(Note: Screenshot of setup to be added manually after installation.)

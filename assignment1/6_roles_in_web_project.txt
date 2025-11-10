@@ -1,0 +1,5 @@
+6. Roles in a Web Project
+
+- Frontend Developer: Builds the user interface using HTML, CSS, and JavaScript.
+- Backend Developer: Manages server-side logic, APIs, and databases.
+- Database Administrator (DBA): Maintains and optimizes databases for efficiency and security.

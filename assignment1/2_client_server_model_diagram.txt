@@ -1,0 +1,7 @@
+2. Client-Server Model Diagram (Textual Representation)
+
+[Client/Browser] ---> (HTTP Request) ---> [Web Server] ---> [Database]
+[Client/Browser] <--- (HTTP Response) <--- [Web Server] <--- [Database]
+
+Explanation: The client sends a request to the web server, the server processes it (possibly fetching data from the database), 
+and then sends the response back to the client.

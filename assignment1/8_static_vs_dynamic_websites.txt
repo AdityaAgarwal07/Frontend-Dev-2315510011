@@ -1,0 +1,7 @@
+8. Difference Between Static and Dynamic Websites
+
+- Static Website: Displays the same content to all users. Built using only HTML and CSS.
+  Example: A portfolio website.
+
+- Dynamic Website: Displays different content based on user interaction or data from the server.
+  Example: E-commerce site like Amazon where products and prices change dynamically.

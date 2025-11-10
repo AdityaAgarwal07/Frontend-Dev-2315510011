@@ -1,0 +1,8 @@
+3. How a Browser Requests and Displays a Web Page
+
+1. The user enters a URL in the browser.
+2. The browser sends an HTTP request to the web server.
+3. The web server processes the request and sends back an HTTP response containing HTML, CSS, and JavaScript files.
+4. The browser parses the HTML and builds the DOM tree.
+5. CSS is applied to style the content, and JavaScript runs to make the page interactive.
+6. The page is rendered and displayed to the user.

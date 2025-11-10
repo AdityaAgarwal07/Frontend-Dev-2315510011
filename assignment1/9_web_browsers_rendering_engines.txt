@@ -1,0 +1,11 @@
+9. Web Browsers and Rendering Engines
+
+| Browser       | Rendering Engine  |
+|----------------|------------------|
+| Google Chrome  | Blink            |
+| Mozilla Firefox| Gecko            |
+| Safari         | WebKit           |
+| Microsoft Edge | Blink            |
+| Opera          | Blink            |
+
+Rendering engines determine how HTML, CSS, and JS are parsed and displayed on screen. Different engines may render pages slightly differently.

@@ -1,0 +1,10 @@
+1. Difference between Frontend, Backend, and Full-Stack Development
+
+- Frontend Development: It deals with the part of a website that users interact with directly. Technologies include HTML, CSS, and JavaScript.
+  Example: Designing a shopping cart page where users see products and buttons.
+
+- Backend Development: It focuses on server-side logic, databases, and APIs that process requests from the frontend.
+  Example: Processing user login and verifying credentials from the database.
+
+- Full-Stack Development: It combines both frontend and backend skills.
+  Example: A developer who designs the UI and also writes the logic for handling payment processing.

@@ -1,0 +1,10 @@
+5. What is a Web Server?
+
+A web server is software that delivers web pages to clients upon request. It handles HTTP requests and responses.
+
+Examples:
+- Apache HTTP Server
+- Nginx
+- Microsoft IIS
+- LiteSpeed
+- Google Web Server

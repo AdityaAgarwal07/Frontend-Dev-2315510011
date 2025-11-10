@@ -1,0 +1,7 @@
+4. Tools for Web Development Environment
+
+- Code Editor (VS Code): To write and edit code efficiently.
+- Browser (Chrome, Firefox): To test and debug web pages.
+- Version Control (Git): To manage code versions and collaborate.
+- Node.js: To run JavaScript outside the browser and manage dependencies.
+- Terminal/Command Prompt: To execute development commands.

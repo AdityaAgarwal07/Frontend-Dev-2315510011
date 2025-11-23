@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Frontend Tasks — Assignment</title>
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<header>
+  <h1>Frontend Tasks — Assignment</h1>
+  <nav>
+    <button data-target="q1">1</button>
+    <button data-target="q2">2</button>
+    <button data-target="q3">3</button>
+    <button data-target="q4">4</button>
+    <button data-target="q5">5</button>
+    <button data-target="q6">6</button>
+    <button data-target="q7">7</button>
+    <button data-target="q8">8</button>
+    <button data-target="q9">9</button>
+  </nav>
+</header>
+
+<main>
+  <!-- Q1 -->
+  <section id="q1" class="panel">
+    <h2>1. Product List Manager (Event Delegation)</h2>
+    <input id="pName" placeholder="New product name" />
+    <button id="addProductBtn">Add</button>
+    <ul id="productList"></ul>
+    <p class="hint">Click Edit to inline edit. Click outside to auto-save.</p>
+  </section>
+
+  <!-- Q2 -->
+  <section id="q2" class="panel">
+    <h2>2. Live Character Counter</h2>
+    <textarea id="charText" maxlength="100" rows="4" placeholder="Type up to 100 characters..."></textarea>
+    <div id="counter">100</div>
+    <button id="resetCnt">Reset</button>
+  </section>
+
+  <!-- Q3 -->
+  <section id="q3" class="panel">
+    <h2>3. Multi-Step Form</h2>
+    <form id="multiForm" novalidate>
+      <div class="step" data-step="1">
+        <label>Name: <input name="name" required /></label>
+        <button type="button" class="next">Next</button>
+      </div>
+      <div class="step hide" data-step="2">
+        <label>Email: <input name="email" required type="email" /></label>
+        <button type="button" class="back">Back</button>
+        <button type="button" class="next">Next</button>
+      </div>
+      <div class="step hide" data-step="3">
+        <label>Password: <input name="password" required minlength="6" type="password" /></label>
+        <button type="button" class="back">Back</button>
+        <button type="submit">Submit</button>
+      </div>
+    </form>
+    <div id="summary"></div>
+  </section>
+
+  <!-- Q4 -->
+  <section id="q4" class="panel">
+    <h2>4. Theme Switcher (setAttribute / data-theme)</h2>
+    <div class="theme-buttons">
+      <button data-theme="light">Light</button>
+      <button data-theme="dark">Dark</button>
+      <button data-theme="blue">Blue</button>
+    </div>
+    <p>Current theme stored as <code>data-theme</code> on &lt;body&gt;.</p>
+  </section>
+
+  <!-- Q5 -->
+  <section id="q5" class="panel">
+    <h2>5. Image Gallery with Modal</h2>
+    <div id="gallery" class="grid"></div>
+    <div id="modal" class="modal hide">
+      <div class="modal-content">
+        <img id="modalImg" src="" alt="preview" />
+      </div>
+    </div>
+  </section>
+
+  <!-- Q6 -->
+  <section id="q6" class="panel">
+    <h2>6. Real-Time Table Filter</h2>
+    <input id="tableSearch" placeholder="Search name/branch" />
+    <table id="studentsTable">
+      <thead><tr><th>Name</th><th>Branch</th><th>CGPA</th></tr></thead>
+      <tbody></tbody>
+    </table>
+    <div id="noResults" class="hide">No results found</div>
+  </section>
+
+  <!-- Q7 -->
+  <section id="q7" class="panel">
+    <h2>7. Mouse Path & Coordinates Logger</h2>
+    <div id="mouseBox" class="box"></div>
+    <div id="coords">X: - , Y: -</div>
+  </section>
+
+  <!-- Q8 -->
+  <section id="q8" class="panel">
+    <h2>8. Custom Dropdown (no &lt;select&gt;)</h2>
+    <div class="custom-dropdown" id="customDropdown">
+      <button id="dropBtn">Choose option</button>
+      <ul class="options hide" role="listbox">
+        <li class="option">Option 1</li>
+        <li class="option">Option 2</li>
+        <li class="option">Option 3</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Q9 -->
+  <section id="q9" class="panel">
+    <h2>9. Form Submit Blocker with Live Errors</h2>
+    <form id="blockForm" novalidate>
+      <label>Name: <input name="name" required /></label><span class="err" data-for="name"></span><br/>
+      <label>Email: <input name="email" required /></label><span class="err" data-for="email"></span><br/>
+      <label>Password: <input name="password" required minlength="6" type="password" /></label><span class="err" data-for="password"></span><br/>
+      <button type="submit">Submit</button>
+    </form>
+    <div id="formMsg"></div>
+  </section>
+
+</main>
+
+<script src="q1.js"></script>
+<script src="q2.js"></script>
+<script src="q3.js"></script>
+<script src="q4.js"></script>
+<script src="q5.js"></script>
+<script src="q6.js"></script>
+<script src="q7.js"></script>
+<script src="q8.js"></script>
+<script src="q9.js"></script>
+<script>
+  // simple nav between sections
+  document.querySelectorAll('header nav button').forEach(btn=>{
+    btn.addEventListener('click',()=> {
+      document.querySelectorAll('.panel').forEach(p=>p.classList.add('hide'));
+      document.getElementById('q'+btn.dataset.target).classList.remove('hide');
+    });
+  });
+  // show first panel
+  document.querySelectorAll('.panel').forEach((p,i)=>{ if(i>0) p.classList.add('hide'); });
+</script>
+</body>
+</html>

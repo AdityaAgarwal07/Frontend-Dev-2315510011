@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<title>Q5 - Team Members Directory</title>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<style>
+.team .member{ padding:6px; border:1px solid #ddd; margin:4px; display:inline-block; }
+.highlight{ background:#dfefff; }
+</style>
+</head>
+<body>
+<main class="team">
+  <h2>Team Directory</h2>
+  <div class="department" data-dept="Engineering">
+    <h3>Engineering</h3>
+    <div class="manager" data-manager="m1">Manager: Alice</div>
+    <div class="members" data-manager="m1">
+      <div class="member">Bob</div>
+      <div class="member">Carol</div>
+      <div class="member">Dave</div>
+    </div>
+  </div>
+
+  <div class="department" data-dept="Design">
+    <h3>Design</h3>
+    <div class="manager" data-manager="m2">Manager: Eve</div>
+    <div class="members" data-manager="m2">
+      <div class="member">Fay</div>
+      <div class="member">Gina</div>
+      <div class="member">Hank</div>
+    </div>
+  </div>
+
+  <button id="randomEmployee">Highlight Random Employee's Siblings</button>
+  <button id="toggleTeam">Collapse/Expand Teams</button>
+</main>
+<script src="q5.js"></script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<title>Q2 - Product Highlight</title>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<style>
+.product{ padding:8px; border:1px solid #ccc; margin:6px; display:inline-block; width:150px; vertical-align:top; }
+.product.selected{ outline:3px solid gold; }
+.product.highlight{ background:#fffbcc; }
+.discount{ color:green; font-weight:bold; }
+.out{ opacity:0.5; }
+</style>
+</head>
+<body>
+<main>
+  <h2>Products</h2>
+  <div id="products">
+    <div class="product" data-stock="in" data-discount="10"><h3>Alpha</h3><p class="price">$100</p><span class="fav">♡</span></div>
+    <div class="product" data-stock="out" data-discount=""><h3>Bravo</h3><p class="price">$80</p><span class="fav">♡</span></div>
+    <div class="product" data-stock="in" data-discount="25"><h3>Charlie</h3><p class="price">$120</p><span class="fav">♡</span></div>
+    <div class="product" data-stock="in" data-discount=""><h3>Delta</h3><p class="price">$60</p><span class="fav">♡</span></div>
+    <div class="product" data-stock="in" data-discount="5"><h3>Echo</h3><p class="price">$40</p><span class="fav">♡</span></div>
+  </div>
+</main>
+<script src="q2.js"></script>
+</body>
+</html>

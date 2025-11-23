@@ -1,0 +1,34 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "Laptop Pro",
+      "price": 89999,
+      "image": "laptop.jpg"
+    },
+    {
+      "id": 2,
+      "name": "Wireless Mouse",
+      "price": 999,
+      "image": "mouse.jpg"
+    },
+    {
+      "id": 3,
+      "name": "Mechanical Keyboard",
+      "price": 3499,
+      "image": "keyboard.jpg"
+    },
+    {
+      "id": 4,
+      "name": "Noise Cancelling Headphones",
+      "price": 5999,
+      "image": "headphones.jpg"
+    },
+    {
+      "id": 5,
+      "name": "USB-C Charger",
+      "price": 1299,
+      "image": "charger.jpg"
+    }
+  ]
+}

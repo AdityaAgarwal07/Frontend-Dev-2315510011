@@ -1,0 +1,68 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "Aaryan"
+    },
+    {
+      "id": 2,
+      "name": "Riya"
+    },
+    {
+      "id": 3,
+      "name": "Kunal"
+    },
+    {
+      "id": 4,
+      "name": "Mahima"
+    },
+    {
+      "id": 5,
+      "name": "Sarthak"
+    }
+  ],
+  "orders": [
+    {
+      "id": 1,
+      "total": 4999
+    },
+    {
+      "id": 2,
+      "total": 1299
+    },
+    {
+      "id": 3,
+      "total": 89999
+    },
+    {
+      "id": 4,
+      "total": 5999
+    },
+    {
+      "id": 5,
+      "total": 2499
+    }
+  ],
+  "products": [
+    {
+      "id": 1,
+      "name": "Laptop Pro"
+    },
+    {
+      "id": 2,
+      "name": "Mouse"
+    },
+    {
+      "id": 3,
+      "name": "Keyboard"
+    },
+    {
+      "id": 4,
+      "name": "Charger"
+    },
+    {
+      "id": 5,
+      "name": "Headphones"
+    }
+  ]
+}

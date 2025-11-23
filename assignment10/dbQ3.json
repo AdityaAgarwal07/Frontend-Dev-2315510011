@@ -1,0 +1,34 @@
+{
+  "tasks": [
+    {
+      "id": 1,
+      "title": "Complete project report",
+      "priority": "High",
+      "completed": false
+    },
+    {
+      "id": 2,
+      "title": "Team meeting prep",
+      "priority": "Medium",
+      "completed": false
+    },
+    {
+      "id": 3,
+      "title": "Fix backend bugs",
+      "priority": "High",
+      "completed": true
+    },
+    {
+      "id": 4,
+      "title": "Update documentation",
+      "priority": "Low",
+      "completed": false
+    },
+    {
+      "id": 5,
+      "title": "Review PRs",
+      "priority": "Medium",
+      "completed": true
+    }
+  ]
+}

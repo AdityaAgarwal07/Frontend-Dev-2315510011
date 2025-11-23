@@ -1,0 +1,39 @@
+{
+  "timetable": [
+    {
+      "id": 1,
+      "day": "Monday",
+      "subject": "Maths",
+      "faculty": "Dr. Kumar",
+      "time": "10:00 AM"
+    },
+    {
+      "id": 2,
+      "day": "Monday",
+      "subject": "Physics",
+      "faculty": "Dr. Sen",
+      "time": "11:00 AM"
+    },
+    {
+      "id": 3,
+      "day": "Tuesday",
+      "subject": "Chemistry",
+      "faculty": "Dr. Yadav",
+      "time": "10:00 AM"
+    },
+    {
+      "id": 4,
+      "day": "Wednesday",
+      "subject": "English",
+      "faculty": "Dr. Sharma",
+      "time": "9:00 AM"
+    },
+    {
+      "id": 5,
+      "day": "Thursday",
+      "subject": "Biology",
+      "faculty": "Dr. Gupta",
+      "time": "1:00 PM"
+    }
+  ]
+}

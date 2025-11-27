@@ -1,0 +1,32 @@
+{
+  "students": [
+    {
+      "name": "Aaryan",
+      "section": "CB",
+      "marks": 34,
+      "grade": "Z-",
+      "id": "0dfw"
+    },
+    {
+      "id": "28dj",
+      "name": "Aditya",
+      "section": "CB",
+      "marks": 76,
+      "grade": "B"
+    },
+    {
+      "id": "41e6",
+      "name": "akshansh",
+      "section": "ca",
+      "marks": 90,
+      "grade": "A"
+    },
+    {
+      "id": "0da6",
+      "name": "abhinav",
+      "section": "cb",
+      "marks": 69,
+      "grade": "B+"
+    }
+  ]
+}
